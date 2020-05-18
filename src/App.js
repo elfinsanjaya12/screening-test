@@ -1,8 +1,17 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import FrontPage from './pages/FrontPage';
+import './assets/css/style.css';
 
 function App() {
   return (
-    <h1>hallo </h1>
+    <div>
+      <Router>
+        <Route exact path="/" component={Dashboard} />
+        <Route path="/front-page" component={FrontPage} />
+      </Router>
+    </div>
   );
 }
 
