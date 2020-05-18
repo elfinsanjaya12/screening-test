@@ -4,6 +4,7 @@ import IconStaticVisitor from '../../assets/images/static_visitor.png';
 // import IconDown from '../assets/img/down.png';
 
 function CardDashboard({ data }) {
+  if (!data) return '';
   return (
     <div className="box-info-body">
       <div className="c_t0">

@@ -1,0 +1,3 @@
+export const FETCH_DASHBOARD = 'FETCH_DASHBOARD';
+
+export const DASHBOARD = 'DASHBOARD';

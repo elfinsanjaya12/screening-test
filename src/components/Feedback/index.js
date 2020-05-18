@@ -11,8 +11,8 @@ function Feedback() {
       <br />
       <span>Your feedbacks and ideas would mean a lot to us!</span>
       <div className="card-feedback-body">
-        <img className="img-feetback-left" src="img/cinta.png" alt="" />
-        <img className="img-feetback-right" src="img/sayang.png" alt="" />
+        {/* <img className="img-feetback-left" src="img/cinta.png" alt="" /> */}
+        {/* <img className="img-feetback-right" src="img/sayang.png" alt="" /> */}
         <p className="text-center">Enter your feedbacks and ideas here</p>
       </div>
       <div>

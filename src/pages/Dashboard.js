@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
 import Header from '../parts/Header';
 import Sidebar from '../parts/Sidebar';
 import Jumrotron from '../components/Jumbotron';
 import BoxInfo from '../components/BoxInfo';
 import Feedback from '../components/Feedback';
-import dashboard from '../json/dashboard.json';
+// import dashboard from '../json/dashboard.json';
+import { fetchPage } from '../store/actions/dashboard';
 
 function Dashboard(props) {
+  // const [hasError, setErrors] = useState(false);
+  const [dashboard, setDashboard] = useState({});
+
+  async function fetchData() {
+    const res = await fetch('https://screening-test-frontend.herokuapp.com/dashboard');
+    res.json()
+      .then((res) => setDashboard(res.express))
+      .catch((err) => console.log(err));
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
+    // const { page } = props;
     <>
       <Header />
       <div className="row">
@@ -29,4 +46,8 @@ function Dashboard(props) {
   );
 }
 
-export default Dashboard;
+const mapStateToProps = (state) => ({
+  page: state.page,
+});
+
+export default connect(mapStateToProps, { fetchPage })(Dashboard);
