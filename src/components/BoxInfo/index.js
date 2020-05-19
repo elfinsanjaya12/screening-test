@@ -1,10 +1,7 @@
-import React from 'react';
-import IconStaticVisitor from '../../assets/images/static_visitor.png';
-// import IconUp from '../assets/img/up.png';
-// import IconDown from '../assets/img/down.png';
+import React from "react";
 
 function CardDashboard({ data }) {
-  if (!data) return '';
+  if (!data) return "";
   return (
     <div className="box-info-body">
       <div className="c_t0">
@@ -28,33 +25,19 @@ function CardDashboard({ data }) {
           <span>{data.visitoramounth}</span>
         </div>
         <div className="uk mini-1">
-          <span>
-            -
-            {' '}
-            {data.parsoneweek}
-          </span>
-          <span>
-            -
-            {' '}
-            {data.parsamounht}
-          </span>
-
+          <span>- {data.parsoneweek}</span>
+          <span>- {data.parsamounht}</span>
         </div>
         <div className="uk mini-1">
           <span>
-            <img src={data.up} alt="icon up" />
-            {' '}
-            {data.persenoneweek}
+            <img src={data.up} alt="icon up" /> {data.persenoneweek}
           </span>
           <span>
-            <img src={data.down} alt="icon down" />
-            {' '}
-            {data.persenamounht}
+            <img src={data.down} alt="icon down" /> {data.persenamounht}
           </span>
         </div>
       </div>
     </div>
-
   );
 }
 
