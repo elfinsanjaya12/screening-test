@@ -6,10 +6,20 @@ const app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'build')));
 
+// create a GET route
+app.get('/dashboard', (req, res) => {
+  res.status(200).json({data:dashboard})
+});
+
+app.get('/page-view', (req, res) => {
+  res.send({ data: pageview });
+});
+
+
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
 app.get('*', function (request, response) {
-  response.sendFile(path.join(__dirname+'build/index.html'));
+  response.sendFile(path.resolve(__dirname, 'build/index.html'));
 });
 
 const dashboard = {
@@ -103,14 +113,6 @@ const pageview = [
 ];
 
 
-// create a GET route
-app.get('/dashboard', (req, res) => {
-  res.status(200).json({data:dashboard})
-});
-
-app.get('/page-view', (req, res) => {
-  res.send({ data: pageview });
-});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
