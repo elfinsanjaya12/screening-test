@@ -42,7 +42,7 @@ const dashboard = {
     title: 'Product Sold',
     icon: '/images/product.png',
     value: '24 Sold',
-    imageUrl: '/images/static_product_sold.png',
+    imageUrl: '/images/static_produk_sold.png',
     visitoroneweek: '56 visitor',
     parsoneweek: '7 day',
     up: '/images/up.png',
