@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
-import ImageAndroid from '../../assets/images/brown.png';
+import React from "react";
+import Mobile from "../Mobile";
 
-function Template() {
+function Layout({data}) {
   return (
-    <div className="col-md-5">
+    <div className="col-md-5 mt-3">
       <form>
-        <ul className="list-style d-flex justify-content-between" style={{ listStyle: 'none' }}>
+        <ul className="list-style d-flex justify-content-between" style={{ listStyle: "none" }}>
           <li>
             <input type="radio" name="web" value="web" />
             <span className="text-li">Web</span>
@@ -22,10 +22,10 @@ function Template() {
         </ul>
       </form>
       <div className="row d-flex justify-content-center">
-        <img src={ImageAndroid} alt="" width="200" />
+        <Mobile data={data} />
       </div>
     </div>
   );
 }
 
-export default Template;
+export default Layout;

@@ -1,0 +1,114 @@
+.list-style {
+    list-style: none;
+  }
+  
+  .list-style li input {
+    margin-right: 13px;
+  }
+  .text-li {
+    font-size: 20px;
+  }
+  #borderimage {
+    border: 34px solid transparent;
+    padding: 4px;
+    border-image: url(../../assets/images/bg-hp.png) 30 round;
+  }
+  .container-hp {
+    width: 250px;
+    padding-bottom: 60px;
+  }
+  .header-hp {
+    width: 130%;
+    background: linear-gradient(97.97deg, #000000 0%, #474747 100%);
+    text-align: -webkit-center;
+    color: white;
+    position: relative;
+    right: 27px;
+    padding: 15px 0px;
+  }
+  
+  .circles {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 100%;
+    border: dashed;
+    color: white;
+  }
+  
+  .content-hp {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text-hp {
+    /* margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 7px; */
+  
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 7px;
+    width: 131%;
+    /* margin-right: -17px; */
+    position: relative;
+    right: 21px;
+  }
+  
+  .btn-hp {
+    /* margin-bottom: 10px;
+      width: 100%; */
+  
+    margin-bottom: 10px;
+    width: 133%;
+    position: relative;
+    right: 24px;
+  }
+  
+  .btn-hp button {
+    width: 80%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 16px;
+  
+    font-size: 11px;
+    padding: 6px 0;
+  }
+  
+  .btn-hp .cr-black {
+    color: white;
+    background: linear-gradient(97.97deg, #000000 0%, #474747 100%);
+  }
+  
+  .btn-hp button img {
+    vertical-align: middle;
+    border-style: none;
+    width: 15px;
+    margin-right: 3px;
+  }
+  
+  .border-hp .img-hpp {
+    /* width: 300px; */
+    position: absolute;
+    width: 284px;
+    right: 580px;
+    top: 11px;
+  }
+  
+  .header-hp p {
+    font-size: 9px;
+  }
+  
+  .header-hp h6 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .hr-hp {
+    position: relative;
+    top: 35px;
+    width: 34%;
+    border: 2px solid black;
+  }
+  

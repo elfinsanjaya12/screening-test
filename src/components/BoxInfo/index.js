@@ -19,7 +19,7 @@ function CardDashboard({ data }) {
       </div>
 
       <div className="c_t1">
-        <img className="img-static" src={IconStaticVisitor} alt="" />
+        <img className="img-static" src={data.imageUrl} alt="" />
       </div>
 
       <div className="mini-text">

@@ -1,15 +1,15 @@
-import { FETCH_DASHBOARD } from '../types';
+import { FETCH_FRONT_PAGE } from '../types';
 
 const initialState = {
-  dashboard: {}
+  frontpage: []
 };
 
 export default function (state = initialState, action) {
-  switch (action.type) {
-    case FETCH_DASHBOARD:
+  switch (action.type) {  
+    case FETCH_FRONT_PAGE:
       return {
         ...state,
-        dashboard : action.payload,
+        frontpage : action.payload,
       };
 
     default:

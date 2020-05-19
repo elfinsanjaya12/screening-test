@@ -1,12 +1,9 @@
 import axios from '../../config';
 import { FETCH_DASHBOARD } from '../types';
 
-export const fetchPage = (url, page) => (dispatch) => axios.get(url).then((response) => {
-  console.log(response.data);
+export const fetchDashboard = (url) => (dispatch) => axios.get(url).then((response) => {
   dispatch({
     type: FETCH_DASHBOARD,
-    payload: {
-      [page]: response.data,
-    },
+    payload: response.data.data,
   });
 });

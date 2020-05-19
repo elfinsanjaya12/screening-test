@@ -1,7 +1,7 @@
-import React from 'react';
-import Brow from '../../assets/images/brow-envy.png';
-import IconChecklist from '../../assets/images/icons/checklist.png';
-import IconWarning from '../../assets/images/icons/warning.png';
+import React from "react";
+import Brow from "../../assets/images/brow-envy.png";
+import IconChecklist from "../../assets/images/icons/checklist.png";
+import IconWarning from "../../assets/images/icons/warning.png";
 
 function Jumbotron(props) {
   return (
@@ -19,7 +19,7 @@ function Jumbotron(props) {
           <li>
             <div className="box-right">
               <img className="img-fluid circle m-1" src={IconChecklist} alt="" />
-              <span>Add Your first product</span>
+              <span className="text-gradient">Add Your first product</span>
             </div>
           </li>
 
@@ -39,7 +39,6 @@ function Jumbotron(props) {
         </ul>
       </div>
     </div>
-
   );
 }
 

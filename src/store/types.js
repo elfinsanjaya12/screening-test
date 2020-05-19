@@ -1,3 +1,3 @@
 export const FETCH_DASHBOARD = 'FETCH_DASHBOARD';
 
-export const DASHBOARD = 'DASHBOARD';
+export const FETCH_FRONT_PAGE = 'FETCH_FRONT_PAGE';
